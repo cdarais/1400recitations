@@ -12,7 +12,7 @@ int main(){
 
 
 	ifstream fin;
-	fin.open("data/input");
+	fin.open("data/integers");
 
 	while (counter < 10){
 		fin >> temp;

@@ -3,32 +3,24 @@
 
 using namespace std;
 
-void AddTwoNumbers(int a, int b){
-	int c = a + b;
-	cout << c << endl;
-}
-
 int main(){
 
+	//variables
 	int total = 0, number = 0;
-
 	ifstream fin;
 
-
-	fin.open("data/input");
+	//open file
+	fin.open("data/integers");
 
 	while (fin >> number){
 		cout << number << " ";
 		total += number;
 	}
-	cout << endl << endl << total << endl;
-
+	//close file
 	fin.close();
-
-	int number1 = 34, number2 = 3;
-
-	AddTwoNumbers(number1, number2);
-
+	
+	//output results
+	cout << endl << endl << total << endl;
 
 	return 0;
 }
