@@ -11,7 +11,7 @@ int main(){
 	int counter = 0;
 
 	//open file
-	fin.open("input");
+	fin.open("data/names");
 
 	//read in values
 	while (counter < 10){ //!true = false
